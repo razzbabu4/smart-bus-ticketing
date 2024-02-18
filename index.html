@@ -64,7 +64,7 @@
 
         <!-- banner section start here-->
         <section class="mx-2 lg:mx-24 lg:mt-6 relative">
-            <div class="bg-[url('./images/banner.png')] bg-contain bg-no-repeat lg:bg-cover">
+            <!-- <div class="bg-[url('./images/banner.png')] bg-contain bg-no-repeat lg:bg-cover">
                 <div class="flex flex-col justify-center items-center lg:gap-8">
                     <h1 class="lg:mt-28 lg:text-6xl lg:font-extrabold text-white">End-to-End Travel with</h1>
                     <h1 class="lg:text-6xl lg:font-extrabold text-[#1DD100]">Eclipse Paribahan</h1>
@@ -74,26 +74,25 @@
                     <button class="btn bg-[#1DD100] lg:font-extrabold border-none lg:mt-4 mb-4 lg:mb-[10.4rem]">Buy
                         Tickets</button>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- <div class="hero min-h-screen rounded-3xl" style="background-image: url('./images/banner.png');">
+            <div class="hero min-h-screen rounded-3xl" style="background-image: url('./images/banner.png');">
                 <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
                 <div class="hero-content text-center text-neutral-content">
-                    <div class="flex flex-col justify-center items-center lg:gap-8">
-                        <h1 class="lg:mt-28 lg:text-6xl lg:font-extrabold text-white">End-to-End Travel with</h1>
-                        <h1 class="lg:text-6xl lg:font-extrabold text-[#1DD100]">Eclipse Paribahan</h1>
+                    <div class="flex flex-col justify-center items-center gap-3 lg:gap-8 font-family">
+                        <h1 class="text-3xl lg:mt-28 lg:text-6xl font-extrabold text-white">End-to-End Travel with</h1>
+                        <h1 class="text-3xl lg:text-6xl font-extrabold text-[#1DD100]">Eclipse Paribahan</h1>
                         <p class="text-center text-white px-1 lg:w-2/4 lg:mt-4">Yes, you can run unit tests and view the
                             results directly
                             within the app. The integrated testing features allow for a streamlined .</p>
-                        <button class="btn bg-[#1DD100] lg:font-extrabold border-none lg:mt-4 mb-4 lg:mb-[10.4rem]">Buy
+                        <button class="btn bg-[#1DD100] lg:font-extrabold border-none mt-4 mb-4">Buy
                             Tickets</button>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- progress -->
-            <div
-                class="grid grid-cols-1 lg:grid-cols-3 lg:px-20 gap-6 lg:absolute lg:-translate-y-20 lg:translate-x-24">
+            <div class="grid grid-cols-1 lg:grid-cols-3 lg:px-20 gap-6 lg:absolute lg:-translate-y-20 lg:translate-x-24">
                 <div class="rounded-2xl flex gap-4 py-8 px-10 border-b-[3px] border-[#1DD100] bg-white">
                     <img src="./images/people.png" alt="">
                     <div class="space-y-2">
@@ -123,7 +122,7 @@
     <!-- main section -->
     <main>
         <!-- coupon section start here-->
-        <section class="mx-2 lg:mx-24 lg:mt-44">
+        <section class="mx-2 lg:mx-24 lg:mt-44 font-family">
             <h1 class="text-center lg:text-4xl font-bold lg:mb-12">Best offers for you</h1>
             <!-- coupon -->
             <div class="grid gap-5 grid-cols-1 lg:grid-cols-2">
@@ -181,7 +180,7 @@
                                 </div>
                             </div>
                             <button class="btn border-none bg-[#1DD10026] text-[#1DD100]"><img
-                                    src="./images/seat-green.png" alt=""> <span id="total-seat">20</span> Seats Left </button>
+                                    src="./images/seat-green.png" alt=""> <span id="total-seat">40</span> Seats Left </button>
                         </div>
 
                         <div class="bg-[#F7F8F8] p-8 mt-6 rounded-3xl flex flex-col gap-6">
@@ -190,12 +189,12 @@
                                 <p class="text-[#030712] font-semibold">Dhaka-Sylhet</p>
                             </div>
                             <hr>
-                            <div class="flex justify-between">
+                            <div class="lg:flex justify-between">
                                 <p>Departure Time</p>
                                 <p class="text-[#030712] font-semibold">9:00 PM</p>
                             </div>
                             <hr>
-                            <div class="grid grid-cols-3 gap-6">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                                 <button class="btn bg-[#03071233]">Boarding Point - Laxmipur</button>
                                 <button class="btn bg-[#03071233]">Dropping Point - Bogura</button>
                                 <button class="btn bg-[#03071233]">Est. Time - 11 Hour</button>
@@ -217,8 +216,8 @@
 
 
             <!-- ticket selection section start here-->
-            <div class="mx-2 lg:mx-24 lg:mt-10 ">
-                <div class="bg-white rounded-3xl flex justify-between">
+            <div class="mx-2 lg:mx-24 lg:mt-10">
+                <div class="bg-white rounded-3xl flex justify-between p-10">
                     <!-- left section-->
                     <div class="p-5 w-[60%]">
                         <h4 class="text-2xl font-semibold">Select Your Seat</h4>
@@ -234,16 +233,27 @@
                         <div class="flex justify-between w-full pt-8">
                             <!-- left side seat -->
                             <div class="grid grid-cols-2 gap-6">
-                                <div>A<button class="seats btn ml-4 px-10">A1</button></div>
-                                <div> <button class="seats btn px-10">A2</button></div>
-                                <div>B<button class="seats btn ml-4 px-10">B1</button></div>
-                                <div> <button class="seats btn px-10">B2</button></div>
-                                <div>C<button class="seats btn ml-4 px-10">C1</button></div>
-                                <div> <button class="seats btn px-10">C2</button></div>
-                                <div>D<button class="seats btn ml-4 px-10">D1</button></div>
-                                <div> <button class="seats btn px-10">D2</button></div>
-                                <div>E<button class="seats btn ml-4 px-10">E1</button></div>
-                                <div> <button class="seats btn px-10">E2</button></div>
+                                <div><button class="seats btn px-10">A1</button></div>
+                                <div><button class="seats btn px-10">A2</button></div>
+                                <div><button class="seats btn px-10">B1</button></div>
+                                <div><button class="seats btn px-10">B2</button></div>
+                                <div><button class="seats btn px-10">C1</button></div>
+                                <div><button class="seats btn px-10">C2</button></div>
+                                <div><button class="seats btn px-10">D1</button></div>
+                                <div><button class="seats btn px-10">D2</button></div>
+                                <div><button class="seats btn px-10">E1</button></div>
+                                <div><button class="seats btn px-10">E2</button></div>
+
+                                <div><button class="seats btn px-10">F1</button></div>
+                                <div><button class="seats btn px-10">F2</button></div>
+                                <div><button class="seats btn px-10">G1</button></div>
+                                <div><button class="seats btn px-10">G2</button></div>
+                                <div><button class="seats btn px-10">H1</button></div>
+                                <div><button class="seats btn px-10">H2</button></div>
+                                <div><button class="seats btn px-10">I1</button></div>
+                                <div><button class="seats btn px-10">I2</button></div>
+                                <div><button class="seats btn px-10">J1</button></div>
+                                <div><button class="seats btn px-10">J2</button></div>
 
                             </div>
                             <!-- right side seat -->
@@ -258,6 +268,17 @@
                                 <div><button class="seats btn px-10">D4</button></div>
                                 <div><button class="seats btn px-10">E3</button></div>
                                 <div><button class="seats btn px-10">E4</button></div>
+
+                                <div><button class="seats btn px-10">F3</button></div>
+                                <div><button class="seats btn px-10">F4</button></div>
+                                <div><button class="seats btn px-10">G3</button></div>
+                                <div><button class="seats btn px-10">G4</button></div>
+                                <div><button class="seats btn px-10">H3</button></div>
+                                <div><button class="seats btn px-10">H4</button></div>
+                                <div><button class="seats btn px-10">I3</button></div>
+                                <div><button class="seats btn px-10">I4</button></div>
+                                <div><button class="seats btn px-10">J3</button></div>
+                                <div><button class="seats btn px-10">J4</button></div>
                             </div>
                         </div>
 
@@ -267,17 +288,17 @@
                     <div class="p-5 w-[40%]">
                         <h4 class="text-2xl font-semibold">Select Your Seat</h4>
                         <hr class="my-3">
-                        <div class="bg-[#F7F8F8] rounded-xl py-6 px-8 mb-10">
+                        <div class="bg-[#F7F8F8] rounded-xl py-6 px-8 my-10">
                             <table class="w-full">
-                                <thead>
+                                <thead class="text-left">
                                     <tr>
                                         <th>Seat <span id="seat-count"
                                                 class="text-white bg-[#1DD100] rounded-full px-2">0</span></th>
-                                        <th>class</th>
+                                        <th>Class</th>
                                         <th>Price</th>
                                     </tr>
                                 </thead>
-                                <tbody id="table-body">
+                                <tbody id="table-body" class="">
                                     
                                 </tbody>
                             </table>
@@ -287,8 +308,8 @@
                                 <p>BDT <span id="total-price">0</span></p>
                             </div>
                             <div id="coupon-div" class="my-5 bg-white flex justify-between p-3 rounded-2xl">
-                                <input id="coupon-code" type="text" placeholder="Have any coupon?"
-                                    class="input input-ghost w-full max-w-xs" />
+                                <input id="coupon-code" type="text" placeholder="At least 4 tickets & Valid Coupon"
+                                    class="input mr-4 input-ghost w-full max-w-xs" />
                                 <button disabled id="apply-btn" class="btn bg-[#1DD100]">Apply</button>
                             </div>
                             <div class="flex justify-between">
@@ -335,37 +356,21 @@
     </main>
 
     <!-- footer section -->
-    <footer class="footer p-6 lg:p-20 bg-[#131318] text-white grid lg:gap-20 grid-cols-1 lg:grid-cols-3 ">
+    <footer class=" w-full p-6 lg:p-20 bg-[#131318] text-white grid lg:gap-48 grid-cols-1 lg:grid-cols-2 ">
         <div class="space-y-2 lg:mr-12 ">
-          <h1 class="font-bold text-xl lg:text-2xl text-center mx-auto lg:mx-0">Get In Touch</h1> 
-          <p class="text-center text-[#FFFFFF99] mx-auto lg:mx-0 lg:text-start">GET IN TOUCH. We're here to answer any questions you may have. Submit your inquiry below or send us an email directly and someone will contact you shortly.</p>
-          <p class="text-center text-[#FFFFFF99] mx-auto lg:mx-0"><i class="fa-regular text-red-700 fa-envelope pr-2"></i> hockeys@support.com</p>
-          <p class="text-center text-[#FFFFFF99] mx-auto lg:mx-0"><i class="fa-solid text-red-700 fa-phone pr-2"></i> (+62) 123-321-543</p>
+          <h1 class="font-bold text-xl lg:text-2xl mx-auto lg:mx-0">E-Tickets</h1> 
+          <p class= text-[#FFFFFF99] mx-auto lg:mx-0 lg:text-start">P-Ticket is a digital platform to make your daily commuting better.</p>
         </div>
-        <div class="grid gap-20 lg:gap-48 grid-cols-2 lg:grid-cols-2 mx-auto">
-          <div class="grid grid-cols-1 mx-auto space-y-2">
-            <h4 class="font-bold block text-center mx-auto lg:mx-0 lg:text-start">Company</h4> 
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">About Us</a>
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Leadership</a>
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Careers</a>
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">News & Article</a>
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Legal Notice</a>
-          </div> 
-          <div  class="grid grid-cols-1 mx-auto space-y-2">
-            <h4 class="font-bold text-center mx-auto lg:mx-0 lg:text-start">Support</h4> 
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Help Center</a>
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">FAQ</a>
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Ticket Support</a>
-            <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Contact Us</a>
-          </div> 
-        </div>
+       
       <div class="mx-auto">
         <h4 class="font-bold text-center mx-auto lg:mx-0 lg:text-start">Services</h4> 
-        <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Academy</a>
-        <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Group Lesson</a>
-        <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Private Lesson</a>
-        <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Hockeys for kids</a>
-        <a class="link link-hover text-[#FFFFFF99] text-center mx-auto lg:mx-0 lg:text-start">Hockeys for Adult</a>
+        <div class="flex gap-4 p-5 rounded-xl border-2">
+            <img src="./images/playstore.png" alt="">
+            <div>
+                <h5>GET IT ON</h5>
+                <h1>Google Play</h1>
+            </div>
+        </div>
       </div> 
     </footer>
 

@@ -181,7 +181,7 @@
                                 </div>
                             </div>
                             <button class="btn border-none bg-[#1DD10026] text-[#1DD100]"><img
-                                    src="./images/seat-green.png" alt=""> <span>40</span> Seats Left </button>
+                                    src="./images/seat-green.png" alt=""> <span id="total-seat">20</span> Seats Left </button>
                         </div>
 
                         <div class="bg-[#F7F8F8] p-8 mt-6 rounded-3xl flex flex-col gap-6">
@@ -234,26 +234,30 @@
                         <div class="flex justify-between w-full pt-8">
                             <!-- left side seat -->
                             <div class="grid grid-cols-2 gap-6">
-                                <div>A<button class="btn ml-4 px-10">A1</button></div>
-                                <div> <button class="btn px-10">A2</button></div>
-                                <div>B<button class="btn ml-4 px-10">B1</button></div>
-                                <div> <button class="btn px-10">B2</button></div>
-                                <div>C<button class="btn ml-4 px-10">C1</button></div>
-                                <div> <button class="btn px-10">C2</button></div>
-                                <div>D<button class="btn ml-4 px-10">D1</button></div>
-                                <div> <button class="btn px-10">D2</button></div>
+                                <div>A<button class="seats btn ml-4 px-10">A1</button></div>
+                                <div> <button class="seats btn px-10">A2</button></div>
+                                <div>B<button class="seats btn ml-4 px-10">B1</button></div>
+                                <div> <button class="seats btn px-10">B2</button></div>
+                                <div>C<button class="seats btn ml-4 px-10">C1</button></div>
+                                <div> <button class="seats btn px-10">C2</button></div>
+                                <div>D<button class="seats btn ml-4 px-10">D1</button></div>
+                                <div> <button class="seats btn px-10">D2</button></div>
+                                <div>E<button class="seats btn ml-4 px-10">E1</button></div>
+                                <div> <button class="seats btn px-10">E2</button></div>
 
                             </div>
                             <!-- right side seat -->
                             <div class="grid grid-cols-2 gap-6">
-                                <div><button class="btn px-10">A3</button></div>
-                                <div><button class="btn px-10">A4</button></div>
-                                <div><button class="btn px-10">B3</button></div>
-                                <div><button class="btn px-10">B4</button></div>
-                                <div><button class="btn px-10">C3</button></div>
-                                <div><button class="btn px-10">C4</button></div>
-                                <div><button class="btn px-10">D3</button></div>
-                                <div><button class="btn px-10">D4</button></div>
+                                <div><button class="seats btn px-10">A3</button></div>
+                                <div><button class="seats btn px-10">A4</button></div>
+                                <div><button class="seats btn px-10">B3</button></div>
+                                <div><button class="seats btn px-10">B4</button></div>
+                                <div><button class="seats btn px-10">C3</button></div>
+                                <div><button class="seats btn px-10">C4</button></div>
+                                <div><button class="seats btn px-10">D3</button></div>
+                                <div><button class="seats btn px-10">D4</button></div>
+                                <div><button class="seats btn px-10">E3</button></div>
+                                <div><button class="seats btn px-10">E4</button></div>
                             </div>
                         </div>
 
@@ -273,28 +277,23 @@
                                         <th>Price</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr id="row-one">
-                                    </tr>
-                                    <tr id="row-two">
-                                    </tr>
-                                    <tr id="row-three">
-                                    </tr>
+                                <tbody id="table-body">
+                                    
                                 </tbody>
                             </table>
                             <hr class="my-5">
                             <div class="flex justify-between">
                                 <p>Total Price</p>
-                                <p>BDT <span>0</span></p>
+                                <p>BDT <span id="total-price">0</span></p>
                             </div>
-                            <div class="my-5 bg-white flex justify-between p-3 rounded-2xl">
-                                <input type="text" placeholder="Have any coupon?"
+                            <div id="coupon-div" class="my-5 bg-white flex justify-between p-3 rounded-2xl">
+                                <input id="coupon-code" type="text" placeholder="Have any coupon?"
                                     class="input input-ghost w-full max-w-xs" />
-                                <button class="btn bg-[#1DD100]">Apply</button>
+                                <button disabled id="apply-btn" class="btn bg-[#1DD100]">Apply</button>
                             </div>
                             <div class="flex justify-between">
                                 <p>Grand Total</p>
-                                <p>BDT <span>0</span></p>
+                                <p>BDT <span id="grand-total">0</span></p>
                             </div>
                         </div>
                         <h3 class="text-lg font-semibold mb-2">Passenger name*</h3>
@@ -303,7 +302,7 @@
                         </label>
                         <h3 class="text-lg font-semibold mb-2">Phone Number*</h3>
                         <label class="input input-bordered flex items-center gap-2 mb-2">
-                            <input type="number" class="grow" placeholder="Enter your phone number" />
+                            <input id="phone-number" type="number" class="grow" placeholder="Enter your phone number" />
                         </label>
                         <h3 class="text-lg font-semibold mb-2">Email ID</h3>
                         <label class="input input-bordered flex items-center gap-2 mb-2">
@@ -311,7 +310,7 @@
                         </label>
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn w-full mt-5 bg-[#1dd100] border-none text-white font-semibold" onclick="my_modal_5.showModal()">Next</button>
+                        <button disabled id="next-btn" class="btn w-full mt-5 bg-[#1dd100] border-none text-white font-semibold" onclick="my_modal_5.showModal()">Next</button>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box flex flex-col justify-center items-center">
                                 <img src="./images/success.png" alt="">

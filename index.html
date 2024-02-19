@@ -289,7 +289,7 @@
                                 </tbody>
                             </table>
                             <hr class="my-5">
-                            <div class="flex justify-between">
+                            <div class="flex justify-between font-semibold">
                                 <p>Total Price</p>
                                 <p>BDT <span id="total-price">0</span></p>
                             </div>
@@ -298,11 +298,11 @@
                                     class="input mr-4 input-ghost w-full max-w-xs" />
                                 <button disabled id="apply-btn" class="btn text-white bg-[#1DD100]">Apply</button>
                             </div>
-                            <div id="discount-div" class="hidden flex justify-between">
+                            <div id="discount-div" class="hidden flex justify-between font-semibold">
                                 <p>Discount Price</p>
                                 <p>BDT <span id="discount-price">0</span></p>
                             </div>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between font-semibold">
                                 <p>Grand Total</p>
                                 <p>BDT <span id="grand-total">0</span></p>
                             </div>
@@ -346,18 +346,18 @@
     </main>
 
     <!-- footer section -->
-    <footer class=" w-full p-6 lg:p-20 bg-[#131318] text-white ">
-        <div class="grid lg:gap-48 grid-cols-1 lg:grid-cols-2 lg:pl-16">
+    <footer class=" w-full p-6 lg:py-20 lg:px-32 bg-[#131318] text-white ">
+        <div class="grid lg:gap-96 grid-cols-1 lg:grid-cols-2">
             <div class="space-y-2 lg:mr-12 ">
                 <h1 class="font-bold text-xl text-center lg:text-left lg:text-4xl mx-auto lg:mx-0">E-Tickets</h1> 
                 <p class= "text-[#FFFFFF99] w-2/3 mx-auto text-center lg:mx-0 lg:text-start">P-Ticket is a digital platform to make your daily commuting better.</p>
               </div>
              
-            <div class="mx-auto">
+            <div class="mx-auto lg:mr-0 float-right">
               <h4 class="font-bold text-center my-3 mx-auto lg:mx-0 lg:text-start">Download our app</h4> 
               <div class="flex gap-2 p-2 rounded-xl border-2">
                   <img src="./images/playstore.png" alt="">
-                  <div>
+                  <div class="cursor-pointer">
                       <h5 class="text-xs">GET IT ON</h5>
                       <h1 class="text-xl">Google Play</h1>
                   </div>
@@ -367,10 +367,10 @@
         <hr class="mt-14 mb-5">
         <div class="flex justify-between">
             <p>@all rights reserved, E-Ticket services limited.2024</p>
-            <div class="grid gap-4 grid-cols-1 lg:grid-cols-3">
-                <a href="">Terms & condition</a>
-                <a href="">Return & refund policy</a>
-                <a href="">Privacy policy</a>
+            <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 cursor-pointer">
+                <a>Terms & condition</a>
+                <a>Return & refund policy</a>
+                <a>Privacy policy</a>
             </div>
         </div>
     </footer>

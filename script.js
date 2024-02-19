@@ -98,4 +98,7 @@ getElement('apply-btn').addEventListener('click', function () {
     else{
         grand.innerText = price;
     }
-})
+});
+getElement('buy-tickets').addEventListener('click', function(e){
+    getElement('tickets-section').scrollIntoView({behavior: 'smooth'});
+});

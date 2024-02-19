@@ -41,6 +41,14 @@ for (let seat of seats) {
             e.target.style.color = 'white';
             e.target.style.background = '#1DD100';
         }
+       
+        const applyBtn = getElement('apply-btn');
+        if (count === 4) {
+            applyBtn.removeAttribute('disabled')
+        }
+        else {
+            applyBtn.setAttribute('disabled', true)
+        }
     });
 }
 
@@ -69,16 +77,16 @@ getElement('phone-number').addEventListener('keyup', function (e) {
     }
 });
 
-getElement('coupon-code').addEventListener('keyup', function (event) {
-    const textValue = event.target.value;
-    const applyBtn = getElement('apply-btn');
-    if ((textValue === 'NEW15' || textValue === 'Couple 20') && count === 4) {
-        applyBtn.removeAttribute('disabled')
-    }
-    else {
-        applyBtn.setAttribute('disabled', true)
-    }
-});
+// getElement('coupon-code').addEventListener('keyup', function (event) {
+//     const textValue = event.target.value;
+//     const applyBtn = getElement('apply-btn');
+//     if ((textValue === 'NEW15' || textValue === 'Couple 20') && count === 4) {
+//         applyBtn.removeAttribute('disabled')
+//     }
+//     else {
+//         applyBtn.setAttribute('disabled', true)
+//     }
+// });
 
 getElement('apply-btn').addEventListener('click', function () {
     let price = parseInt(getElement('total-price').innerText);
@@ -86,19 +94,25 @@ getElement('apply-btn').addEventListener('click', function () {
     let getValue = getElement('coupon-code').value;
     let discount15 = price * 0.15;
     let discount20 = price * 0.20;
-    
-    if(getValue === 'NEW15'){
+
+    if (getValue === 'NEW15') {
         grand.innerText = price - discount15;
+        getElement('discount-price').innerText = discount15;
         getElement('coupon-div').classList.add('hidden');
+        getElement('discount-div').classList.remove('hidden');
     }
-    else if(getValue === 'Couple 20'){
+    else if (getValue === 'Couple 20') {
         grand.innerText = price - discount20;
+        getElement('discount-price').innerText = discount20;
         getElement('coupon-div').classList.add('hidden');
+        getElement('discount-div').classList.remove('hidden');
     }
-    else{
+    else {
         grand.innerText = price;
+        alert('Invalid Coupon Code')
     }
 });
-getElement('buy-tickets').addEventListener('click', function(e){
-    getElement('tickets-section').scrollIntoView({behavior: 'smooth'});
+
+getElement('buy-tickets').addEventListener('click', function (e) {
+    getElement('tickets-section').scrollIntoView({ behavior: 'smooth' });
 });

@@ -109,7 +109,8 @@ getElement('apply-btn').addEventListener('click', function () {
     }
     else {
         grand.innerText = price;
-        alert('Invalid Coupon Code')
+        alert('Invalid Coupon Code');
+        getElement('coupon-code').value = "";
     }
 });
 
